@@ -11,28 +11,28 @@
 ## 1.2 训练代码及版本
 [点击进入YOLOV6源码地址](https://github.com/airockchip/YOLOv6) ，预训练模型及代码版本号选择：**0.3.0**
 
-### 1.1.1 训练命令示例
+### 1.2.1 训练命令示例
 **Note:** 注意训练适配 rknn 的模型时，不要开启 ***--fuse_ab***
 ```shell
 python tools/train.py --batch 32 --epochs 100 --conf configs/yolov6n_finetune.py --data data/dataset.yaml  --device 0
 ``` 
 
-### 1.1.2 测试训练后的模型效果
+### 1.2.2 测试训练后的模型效果
 ```shell
 python tools/infer.py --weights ./weights/last_ckpt.pt --yaml ./data/dataset.yaml --source ./test_data/img/ --save-dir ./test_data/results/
 ``` 
 
-### 1.1.3 查看训练loss曲线示例
+### 1.2.3 查看训练loss曲线示例
 ```shell
 tensorboard --logdir ./runs/train/exp/
 ```
 
-### 1.1.4 导出适配rknn的onnx模型示例
+### 1.2.4 导出适配rknn的onnx模型示例
 ```shell
 python deploy/RKNN/export_onnx_for_rknn.py --weight ./yolov6n.pt
 ```
 
-### 1.1.5 导出rknn模型
+### 1.2.5 导出rknn模型
 [导出教程参考 rknn_model_zoo](https://github.com/airockchip/rknn_model_zoo)
 ## 1.3 版本说明
 
