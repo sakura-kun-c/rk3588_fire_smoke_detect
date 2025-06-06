@@ -1,0 +1,4 @@
+models/
+test_data/*.mp4
+build/
+.vscode/

@@ -1,1 +1,0 @@
-# rk3588_fire_smoke_detect
